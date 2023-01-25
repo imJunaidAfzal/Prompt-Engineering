@@ -21,14 +21,16 @@ Overall, Text-to-image models are powerful tools for creating images from text d
 Prompt weighting is a technique supported by Stable Diffusion that gives users fine control over their prompt. Using prompt weight, you can tell Stable Diffusion where to pay more attention and where to pay less.
 
 **Example**
-
-**Prompt 1: A hybrid between a Shiba inu:0.7 and a polar bear, photography, award winning, documentary, wildlife, 8k**
-
+```
+Prompt 1: A hybrid between a Shiba inu:0.7 and a polar bear, photography, award winning, documentary, wildlife, 8k
+```
 The above prompt tells Stable Diffusion to emphasize Shiba Inu. So, you can expect an image that has the dominance of a Shiba Inu over a polar bear. In this case, Stable Diffusion focuses mostly on Shiba Inu and automatically applies the difference (which is 0.3) to polar bear. 
 
 Alternatively, you can assign weights to each words in your prompt for finer control.
 
-**Prompt 2: a cute:0.2 hybrid between a Shiba inu:0.5 and a polar bear:0.3, photography, award winning, documentary, wildlife, 8k**
+```
+Prompt 2: a cute:0.2 hybrid between a Shiba inu:0.5 and a polar bear:0.3, photography, award winning, documentary, wildlife, 8k
+```
 
 ### Things to Remember About Stable Diffusion Prompt Weighting
 
