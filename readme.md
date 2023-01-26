@@ -103,5 +103,9 @@ I will Iteratively follow flowers prompt and skull prompt.
 
 - Check this [Prompt Book](https://openart.ai/promptbook) to know more about prompt engineering for stable diffusion.
 - To create specific style images use [Artists names for specific styles](https://github.com/kaikalii/stable-diffusion-artists)
-
+- [Stable Diffusion V1 Artist Styles](https://proximacentaurib.notion.site/e28a4f8d97724f14a784a538b8589e7d?v=ab624266c6a44413b42a6c57a41d828c)
+- [Stable Diffusion V1 Modifier Studies](https://proximacentaurib.notion.site/2b07d3195d5948c6a7e5836f9d535592?v=b5b75a67cc52483c9965cfc141f6f582)
+- [Stable Diffusion Modifiers](https://www.the-ai-art.com/modifiers)
+- [Stable Diffusion Top Artists](https://www.urania.ai/top-sd-artists)
+- [THE Ultimate Prompting GUIDE](https://prompthero.com/stable-diffusion-prompt-guide)
 
