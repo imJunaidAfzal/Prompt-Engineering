@@ -12,7 +12,7 @@ Prompt engineering is an important step in the development of text-to-image mode
 
 Overall, Text-to-image models are powerful tools for creating images from text descriptions. By using prompt engineering techniques, we can create models that are able to generate high-quality images that are representative of a wide range of subjects and styles.
 
-## Prompt Engineering for Stable Diffusion
+# Prompt Engineering for Stable Diffusion
 
 - Prompt weighting
 - Prompt Editing
@@ -95,9 +95,62 @@ Let you select number_of_steps = 50 for generations.
 [flowers painted by aubrey beardsley|skull painted by greg rutkowski]
 ```
 
-I will Iteratively follow flowers prompt and skull prompt.
+It will Iteratively follow flowers prompt and skull prompt.
 
-#### We can also use the combination of them like prompt weighting in prompt editing  etc. 
+#### We can also use the combination of them like prompt weighting in prompt editing  etc.
+
+## Some useful prompts settings keywords
+
+### lighting
+accent lighting, ambient lighting, backlight, blacklight, blinding light, candlelight, concert lighting, crepuscular rays, direct sunlight, dusk, Edison bulb, electric arc, fire, fluorescent, glowing, glowing radioactively, glow-stick, lava glow, moonlight, natural lighting, neon lamp, nightclub lighting, nuclear waste glow, quantum dot display, spotlight, strobe, sunlight, ultraviolet, dramatic lighting, dark lighting, soft lighting, gloomy
+
+### Detail
+
+highly detailed, grainy, realistic, unreal engine, octane render, bokeh, vray, houdini render, quixel megascans, depth of field (or dof), arnold render, 8k uhd, raytracing, cgi, lumen reflections, cgsociety, ultra realistic, volumetric fog, overglaze, analog photo, polaroid, 100mm, film photography, dslr, cinema4d, studio quality
+
+### artistic techniques and materials
+
+Digital art, digital painting, color page, featured on pixiv (for anime/manga), trending on artstation, precise line-art, tarot card, character design, concept art, symmetry, golden ratio, evocative, award winning, shiny, smooth, surreal, divine, celestial, elegant, oil painting, soft, fascinating, fine art
+
+### camera view and quality
+
+ultra wide-angle, wide-angle, aerial view, massive scale, street level view, landscape, panoramic, bokeh, fisheye, dutch angle, low angle, extreme long-shot, long shot, close-up, extreme close-up, highly detailed, depth of field (or dof), 4k, 8k uhd, ultra realistic, studio quality, octane render,
+
+### style and composition
+
+Surrealism, trending on artstation, matte, elegant, illustration, digital paint, epic composition, beautiful, the most beautiful image ever seen,
+
+### colours
+
+Triadic colour scheme, washed colour
+
+### Keep in mind
+
+This could be easily the most difficult part. Ironic, huh? But it’s true – we find ourselves sometimes struggling with the fact that we have this image in our heads and not enough or accurate words to describe it. Therefore, the AI will give us an image maybe close enough to our idea but not entirely.
+
+**Here are some tips that may help you with this blocking:**
+
+- Order matters!!! 
+- Just keep in mind order matters – words near the front of your prompt are weighted more heavily than the things in the back of your prompt.
+- If you’re still using the word **“very”** before any other word, **STOP IT. IMMEDIATELY**. Try to find an accurate word instead of adding “very” to everything in order to highlight it. There is this website that might help you out with this.
+- Try to follow this steps: content type > description > style > composition.
+- Content type: What type of artwork you want to achieve? Is it a photograph, drawing, sketch, 3D render..?
+- Description: define the subject, subject attributes, environment/scene. The more descriptive you are with the use of adjectives, the better the output.
+- Style: we’ve seen the most common ones above, but there are also “sub-categories” – lightning, detail…
+- Composition: it refers to aspect ratio, camera view and resolution.
+
+## SD Setting
+
+This is quite a technical concept. It’s an option you can choose when generating images in Stable Diffusion. In short: the output looks more or less the same no matter which sampling method you use, the differences are very subtle and it shouldn’t matter much which one you select. Some people say there are three groups: group A (DDIM, Euler, DPM2, HEUN, LMS, DPM_adaptive and PLMS) is more soft and artsy; group B (DPM_fast) gives more variety and random results; and group C (DPM2, Euler_a) gives results that are a bit more photorealistic and clear. To recap: if you want soft and artsy, you could use DPM_adaptive or DDIM; if you want variety go for DPM_fast; and if you’re looking for photorealism try DPM2 or Euler_a.
+
+### Seed
+
+used to limit randomness. Generations with the same prompt, params and seed will result in the same image.
+
+
+### Steps
+how many steps to spend generating (diffusing) your image. More steps, more image quality and time to generate.
+
 
 ## Useful sources:
 
