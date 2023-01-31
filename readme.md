@@ -162,3 +162,5 @@ how many steps to spend generating (diffusing) your image. More steps, more imag
 - [Stable Diffusion Top Artists](https://www.urania.ai/top-sd-artists)
 - [THE Ultimate Prompting GUIDE](https://prompthero.com/stable-diffusion-prompt-guide)
 
+## GPT-3 and Chat-GPT Prompting
+
