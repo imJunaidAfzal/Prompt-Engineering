@@ -174,5 +174,52 @@ how many steps to spend generating (diffusing) your image. More steps, more imag
 - [Stable Diffusion Top Artists](https://www.urania.ai/top-sd-artists)
 - [THE Ultimate Prompting GUIDE](https://prompthero.com/stable-diffusion-prompt-guide)
 
+## Sample Generated Images
+**Settings**
+
+```
+prompt:Highly detailed Portrait of BlackOps man with ((cat head)), ((Golden suit)), (dangerous), ((uhd)), ((war zone)), ((Foggy background)), 8k, ((insance details))
+seed: 49376049
+height: 768
+width: 512
+num_inference_steps: 80
+guidance_scale: 7.5
+negative_prompt:far, unclear, distorted face, (text), poor eyes, not looking at camera, not centered, dirty teeth, duplicate, separate, out of frame, half person, cartoon, 3d, multiple frames, color background, low quality,((disfigured)), ((bad art)), ((deformed)),((extra limbs)), ((extra barrel)),((b&w)), weird colors, blurry, (((duplicate))), ((morbid)), ((mutilated)), [out of frame], extra fingers, mutated hands, ((poorly drawn hands)), ((poorly drawn face)), (((mutation))), (((deformed))), ((ugly)), blurry, ((bad anatomy)), (((bad proportions))), ((extra limbs)), cloned face, (((disfigured))), out of frame, ugly, extra limbs, (bad anatomy), gross proportions, (malformed limbs), ((missing arms)), ((missing legs)), (((extra arms))), (((extra legs))), mutated hands, (fused fingers), (too many fingers), (((long neck))), (((tripod))), (((tube))), Photoshop, video game, ugly, tiling, poorly drawn hands, poorly drawn feet, poorly drawn face, out of frame, mutation, mutated, extra limbs, extra legs, extra arms, disfigured, deformed, cross-eye, body out of frame, blurry, bad art, bad anatomy, 3d render, (((umbrella))), (ugly eyes, deformed iris, deformed pupils, fused lips and teeth:1.2), (un-detailed skin, semi-realistic, 3d, render, sketch, cartoon, drawing, anime:1.2), text, close up, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck
+```
+<img
+  src=https://github.com/imJunaidAfzal/Prompt-Engineering/blob/main/images/28_5.jpg
+  alt="image"
+  style="display: inline-block; margin: 0 auto; max-width: 200px">
+  
+  
+  
+```
+prompt: Highly detailed Portrait of ((Vikings Ironman)), ((beast)), (dangerous), ((uhd)), ((war zone)), (((destroyed city in background))), 8k, ((insance details)), cinematic dark lighting
+seed: 49876717
+height: 944
+width: 768
+num_inference_steps: 80
+guidance_scale: 8
+negative_prompt:far, unclear, distorted face, (text), poor eyes, not looking at camera, not centered, dirty teeth, duplicate, separate, out of frame, half person, cartoon, 3d, multiple frames, color background, low quality,((disfigured)), ((bad art)), ((deformed)),((extra limbs)), ((extra barrel)),((b&w)), weird colors, blurry, (((duplicate))), ((morbid)), ((mutilated)), [out of frame], extra fingers, mutated hands, ((poorly drawn hands)), ((poorly drawn face)), (((mutation))), (((deformed))), ((ugly)), blurry, ((bad anatomy)), (((bad proportions))), ((extra limbs)), cloned face, (((disfigured))), out of frame, ugly, extra limbs, (bad anatomy), gross proportions, (malformed limbs), ((missing arms)), ((missing legs)), (((extra arms))), (((extra legs))), mutated hands, (fused fingers), (too many fingers), (((long neck))), (((tripod))), (((tube))), Photoshop, video game, ugly, tiling, poorly drawn hands, poorly drawn feet, poorly drawn face, out of frame, mutation, mutated, extra limbs, extra legs, extra arms, disfigured, deformed, cross-eye, body out of frame, blurry, bad art, bad anatomy, 3d render, (((umbrella))), (ugly eyes, deformed iris, deformed pupils, fused lips and teeth:1.2), (un-detailed skin, semi-realistic, 3d, render, sketch, cartoon, drawing, anime:1.2), text, close up, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck
+```
+<img
+  src=https://github.com/imJunaidAfzal/Prompt-Engineering/blob/main/images/32_0%20(1).jpg
+  alt="image"
+  style="display: inline-block; margin: 0 auto; max-width: 200px">
+  
+  ```
+prompt: Highly detailed Portrait of ((Vikings Ironman)), ((dark matter suit)), ((beast)), (dangerous), ((uhd)), ((war zone)), (((destroyed city in background))), (((game character))), 8k, ((insance details)), cinematic dark neon lighting
+seed: 84269025
+height: 944
+width: 768
+num_inference_steps: 80
+guidance_scale: 7.5
+negative_prompt:far, unclear, distorted face, (text), poor eyes, not looking at camera, not centered, dirty teeth, duplicate, separate, out of frame, half person, cartoon, 3d, multiple frames, color background, low quality,((disfigured)), ((bad art)), ((deformed)),((extra limbs)), ((extra barrel)),((b&w)), weird colors, blurry, (((duplicate))), ((morbid)), ((mutilated)), [out of frame], extra fingers, mutated hands, ((poorly drawn hands)), ((poorly drawn face)), (((mutation))), (((deformed))), ((ugly)), blurry, ((bad anatomy)), (((bad proportions))), ((extra limbs)), cloned face, (((disfigured))), out of frame, ugly, extra limbs, (bad anatomy), gross proportions, (malformed limbs), ((missing arms)), ((missing legs)), (((extra arms))), (((extra legs))), mutated hands, (fused fingers), (too many fingers), (((long neck))), (((tripod))), (((tube))), Photoshop, video game, ugly, tiling, poorly drawn hands, poorly drawn feet, poorly drawn face, out of frame, mutation, mutated, extra limbs, extra legs, extra arms, disfigured, deformed, cross-eye, body out of frame, blurry, bad art, bad anatomy, 3d render, (((umbrella))), (ugly eyes, deformed iris, deformed pupils, fused lips and teeth:1.2), (un-detailed skin, semi-realistic, 3d, render, sketch, cartoon, drawing, anime:1.2), text, close up, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck
+```
+<img
+  src=https://github.com/imJunaidAfzal/Prompt-Engineering/blob/main/images/31_5.jpg
+  alt="image"
+  style="display: inline-block; margin: 0 auto; max-width: 200px">
+  
 ## GPT-3 and Chat-GPT Prompting
 
