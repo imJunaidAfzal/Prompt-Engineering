@@ -192,7 +192,8 @@ negative_prompt:far, unclear, distorted face, (text), poor eyes, not looking at 
   style="display: inline-block; margin: 0 auto; max-width: 200px">
   
   
-  
+**Settings**
+
 ```
 prompt: Highly detailed Portrait of ((Vikings Ironman)), ((beast)), (dangerous), ((uhd)), ((war zone)), (((destroyed city in background))), 8k, ((insance details)), cinematic dark lighting
 seed: 49876717
@@ -206,8 +207,10 @@ negative_prompt:far, unclear, distorted face, (text), poor eyes, not looking at 
   src=https://github.com/imJunaidAfzal/Prompt-Engineering/blob/main/images/32_0%20(1).jpg
   alt="image"
   style="display: inline-block; margin: 0 auto; max-width: 200px">
-  
-  ```
+
+
+**Settings**
+```
 prompt: Highly detailed Portrait of ((Vikings Ironman)), ((dark matter suit)), ((beast)), (dangerous), ((uhd)), ((war zone)), (((destroyed city in background))), (((game character))), 8k, ((insance details)), cinematic dark neon lighting
 seed: 84269025
 height: 944
