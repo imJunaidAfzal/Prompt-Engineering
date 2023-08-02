@@ -1,5 +1,7 @@
 # Prompt Engineering
 ## Text-to-Image Models and Prompt Engineering
+<details>
+<summary> <b>Text to Image models Prompting (Stable Diffusion /Dall-e / Midjourney)</b></summary>
 Text-to-image models are a type of machine learning model that are trained to generate images from text descriptions. These models can be used for a variety of tasks, such as generating images from written stories or creating images from textual descriptions of objects or scenes.
 
 Prompt engineering is the process of designing and fine-tuning the input text prompts that are used to train and evaluate text-to-image models. The goal of prompt engineering is to create prompts that are both diverse and representative of the types of images that the model will be used to generate.
@@ -223,6 +225,98 @@ negative_prompt:far, unclear, distorted face, (text), poor eyes, not looking at 
   src=https://github.com/imJunaidAfzal/Prompt-Engineering/blob/main/images/31_5.jpg
   alt="image"
   style="display: inline-block; margin: 0 auto; max-width: 200px">
-  
-## GPT-3 and Chat-GPT Prompting
+  </details>
 
+
+## GPT-3 / GPT-4 / Chat-GPT Prompting
+
+<details>
+<summary> <b> GPT-3 </b></summary>
+
+
+GPT-3 Large language model (175B Params) and trained on internet (till end of 2021), Audio books, hard books etc. We can perform any NLP base task using it like Classification, text generation, QA, AI assistant, feature extraction etc.
+
+Here's the best practices to use the gpt-3 to build the most AI base apps most efficiently. You can access playground here: [OpenAI Playground](https://platform.openai.com/playground). Select completion model from right and select GPT-3.
+
+### GPT-3 prompting types
+
+You can build the apps using 3 main prompting types:
+* **Zero-shot (For simple tasks)** 
+* **1-shot (If zero-shot fails)**
+* **Few-shot (Complex tasks)**
+
+### Zero-shot
+This zero-shot we only expalin our main purpose, what we want to do, in this we do not provide any examples. For example lets say we want to create language translator. Its zero-shot prompt looks like this:
+
+**Prompt (Language Translator)**
+```
+This is language translator tool, it takes input in English and returns output in German language.
+Text-in-English: {Your-text-here}
+Text-in-German:
+```
+->GPT-3 will return the output in German language. Sometimes, it start to generate the unnecessary texts, so we can add **Stop Sequence** in setting (at right side of playground). In our case it can be `Text-in-English:`
+
+Now lets make it general (For any to any language).
+
+**General Prompt (Language Translator, Any-To-Any Language)**
+We will use the multiple taging to achieve this goal.
+
+**Prompt**
+```
+This is language translator tool, it takes input in {Language-1} and returns output in {Language-2} language.
+
+Text-in-{Language-1}: {Your-text-here}
+Text-in-{Language-2}:
+```
+Replace tags with languages when you're going to integrate it in app. 
+
+**API example witn python**
+
+**Install openai**
+```
+pip install openai --upgrade
+```
+
+
+```python
+import openai
+openai.api_key = "YOUR_API_KEY"
+
+def language_translator(text, source_language, target_language):
+
+    # Copy code from playground and create a text file, to keep the code clean.
+    prompt = open("prompt_file.txt", "r").read() 
+    prompt = prompt.replace("{Language-1}", source_language)  # Replacing input language tag.
+    prompt = prompt.replace("{Language-2}", target_language)  # Replacing output language tag.
+    rompt = prompt.replace("{Your-text-here}", text)  # Replacing text-input with user text.
+
+    response  openai.Completion.create(
+    model="text-davinci-003",
+    prompt=prompt,
+    temperature=0.4,  # More temperature means more randomness.
+    max_tokens=256,  # Max output (4 tokens approx 1 word)
+    stop=[f"Text-in-{Language-1}"]  # to stop unnecessary generation
+  )
+
+  return response['choices'][0]['text']
+
+if __name__ == "__main__":
+    # Example text-input.
+    text = "Hello, how are you?"
+
+    # Example language tags.
+    source_language = "English"
+    target_language = "Arabic"
+
+    output = language_translator(
+      text=text
+      source_language=source_language
+      target_language=target_language
+    )
+    print(f"Text in {source_language} is:\n{text}")
+    print(f"Text in {target_language} is:\n {output}")
+
+```
+
+
+### Best practice for GPT-3 prompting
