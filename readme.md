@@ -246,7 +246,7 @@ You can build the apps using 3 main prompting types:
 * **Few-shot (Complex tasks)**
 
 ### Zero-shot
-This zero-shot we only expalin our main purpose, what we want to do, in this we do not provide any examples. For example lets say we want to create language translator. Its zero-shot prompt looks like this:
+In the zero-shot we only expalin our main purpose, what we want to do, in this we do not provide any examples. For example lets say we want to create language translator. Its zero-shot prompt looks like this:
 
 **Prompt (Language Translator)**
 ```
