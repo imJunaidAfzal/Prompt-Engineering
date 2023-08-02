@@ -1,0 +1,4 @@
+This is language translator tool, it takes input in {Language-1} and returns output in {Language-2} language.
+
+Text-in-{Language-1}: {Your-text-here}
+Text-in-{Language-2}:
