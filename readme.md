@@ -288,7 +288,7 @@ def language_translator(text, source_language, target_language):
     prompt = open("prompt_file.txt", "r").read() 
     prompt = prompt.replace("{Language-1}", source_language)  # Replacing input language tag.
     prompt = prompt.replace("{Language-2}", target_language)  # Replacing output language tag.
-    rompt = prompt.replace("{Your-text-here}", text)  # Replacing text-input with user text.
+    prompt = prompt.replace("{Your-text-here}", text)  # Replacing text-input with user text.
 
     response  openai.Completion.create(
     model="text-davinci-003",
