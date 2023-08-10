@@ -1,7 +1,18 @@
 # Prompt Engineering
 ## Text-to-Image Models and Prompt Engineering
-<details>
-<summary> <b>Text to Image models Prompting (Stable Diffusion /Dall-e / Midjourney)</b></summary>
+
+### Models
+
+| SR#  | Sample Image                                      | Model Name                                                                                                                |
+|------|--------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| 1    | <img src="images\model_imgs\riot_diffusion.jpeg" width="80px"/>             | [Riot Diffusion XL (Riot Games, League of Legends)](https://civitai.com/models/125151/riot-diffusion-xl-riot-games-league-of-legends)  |
+| 2    | <img src="images\model_imgs\dream_sharper.png" width="80px"/>             | [DreamShaper](https://civitai.com/models/4384)                                          |
+| 3    | <img src="images\model_imgs\SDVN7-RealArtXL.jpeg" width="80px"/>             | [SDVN7 RealArt XL](https://civitai.com/models/123307/sdvn7-realartxl)                                   |
+| 4    | <img src="images\model_imgs\sdvn6-realxl.jpeg" width="80px"/>             | [SDVN6 RealXL](https://civitai.com/models/118114/sdvn6-realxl)                                       |
+| 5    | <img src="images\model_imgs\rough_oil.jpeg" width="80px"/>             | [Envy Rough Oil XL-01](https://civitai.com/models/124533/envy-rough-oil-xl-01)                           |
+| 6    | <img src="images\model_imgs\rev_anim.png" width="80px"/>             | [ReV Animated](https://civitai.com/models/7371)                                          |
+| 7    | <img src="images\model_imgs\game icon.jpeg" width="80px"/>             | [Game Icon](https://civitai.com/models/123767/game-icon-instituteyanjiusuopingziv3-000020)         |
+
 Text-to-image models are a type of machine learning model that are trained to generate images from text descriptions. These models can be used for a variety of tasks, such as generating images from written stories or creating images from textual descriptions of objects or scenes.
 
 Prompt engineering is the process of designing and fine-tuning the input text prompts that are used to train and evaluate text-to-image models. The goal of prompt engineering is to create prompts that are both diverse and representative of the types of images that the model will be used to generate.
@@ -225,110 +236,3 @@ negative_prompt:far, unclear, distorted face, (text), poor eyes, not looking at 
   src=https://github.com/imJunaidAfzal/Prompt-Engineering/blob/main/images/31_5.jpg
   alt="image"
   style="display: inline-block; margin: 0 auto; max-width: 200px">
-  </details>
-
-
-## GPT-3 / GPT-4 / Chat-GPT Prompting
-
-GPT-3 Large language model (175B Params) and trained on internet (till end of 2021), Audio books, hard books etc. We can perform any NLP base task using it like Classification, text generation, QA, AI assistant, feature extraction etc.
-
-Here's the best practices to use the gpt-3 to build the most AI base apps most efficiently. You can access playground here: [OpenAI Playground](https://platform.openai.com/playground). Select completion model from right and select GPT-3.
-
-### GPT-3 prompting types
-
-You can build the apps using 3 main prompting types:
-* **Zero-shot (For simple tasks)** 
-* **1-shot (If zero-shot fails)**
-* **Few-shot (Complex tasks)**
-
-In zero-shot we do not provide any examples and try to achieve our goal just using system prompt.
-In one-shot we add one example for our usecase to make things clear.
-In Few-shot we add multiple exampples to make sure our system understands our usecase. This type is used in handling complex usecase where system prompt unable to teach our usecase to gpt-3.
-
-<details>
-<summary> <b> GPT-3 zero-shot prompting </b></summary>
-
-In the zero-shot we only expalin our main purpose, what we want to do, in this we do not provide any examples. For example lets say we want to create language translator. Its zero-shot prompt looks like this:
-Here's a simple example of zero-shot prompting.
-**Prompt (Language Translator)**
-```
-This is language translator tool, it takes input in English and returns output in German language.
-Text-in-English: {Your-text-here}
-Text-in-German:
-```
-->GPT-3 will return the output in German language. Sometimes, it start to generate the unnecessary texts, so we can add **Stop Sequence** in setting (at right side of playground). In our case it can be `Text-in-English:`
-
-Now lets make it general (For any to any language).
-
-**General Prompt (Language Translator, Any-To-Any Language)**
-We will use the multiple taging to achieve this goal.
-
-**Prompt**
-```
-This is language translator tool, it takes input in {Language-1} and returns output in {Language-2} language.
-
-Text-in-{Language-1}: {Your-text-here}
-Text-in-{Language-2}:
-```
-Replace tags with languages when you're going to integrate it in app. 
-
-**API example witn python**
-
-**Install openai**
-```
-pip install openai --upgrade
-```
-
-
-```python
-import openai
-openai.api_key = "YOUR_API_KEY"
-
-def language_translator(text, source_language, target_language):
-
-    # Copy code from playground and create a text file, to keep the code clean.
-    prompt = open("language_translator_prompt.txt", "r").read() 
-    prompt = prompt.replace("{Language-1}", source_language)  # Replacing input language tag.
-    prompt = prompt.replace("{Language-2}", target_language)  # Replacing output language tag.
-    prompt = prompt.replace("{Your-text-here}", text)  # Replacing text-input with user text.
-
-    response = openai.Completion.create(
-    model="text-davinci-003",
-    prompt=prompt,
-    temperature=0.4,  # More temperature means more randomness.
-    max_tokens=256,  # Max output (4 tokens approx 1 word)
-    stop=[f"Text-in-{source_language}"]  # to stop unnecessary generation
-    )
-    return response['choices'][0]['text']
-
-if __name__ == "__main__":
-    # Example text-input.
-    text = "Hello, how are you?"
-
-    # Example language tags.
-    source_language = "English"
-    target_language = "Arabic"
-
-    output = language_translator(
-      text=text
-      source_language=source_language
-      target_language=target_language
-    )
-    print(f"Text in {source_language} is:\n{text}")
-    print(f"Text in {target_language} is:\n {output}")
-
-```
-</details>
-
-<details>
-<summary> <b>GPT-3 One-shot prompting</b> </summary>
-Comming Soon
-</details>
-
-<details>
-<summary> <b>GPT-3 Few-shot prompting</b> </summary>
-Comming Soon
-</details>
-
-
-### Best practice for GPT-3 prompting
