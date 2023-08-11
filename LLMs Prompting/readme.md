@@ -3,6 +3,9 @@
 
 GPT-3 Large language model (175B Params) and trained on internet (till end of 2021), Audio books, hard books etc. We can perform any NLP base task using it like Classification, text generation, QA, AI assistant, feature extraction etc.
 
+<img
+  src="images\OpenAI-GPT-3.png"/>
+
 Here's the best practices to use the gpt-3 to build the most AI base apps most efficiently. You can access playground here: [OpenAI Playground](https://platform.openai.com/playground). Select completion model from right and select GPT-3.
 
 ### GPT-3 prompting types
