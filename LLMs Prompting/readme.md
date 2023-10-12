@@ -1,4 +1,7 @@
 # Prompting Engineering
+
+## Resources 
+- [Google-Prompt-Examples](https://developers.generativeai.google/prompt-gallery)
 ## GPT-3 / GPT-4 / Chat-GPT Prompting
 
 GPT-3 Large language model (175B Params) and trained on internet (till end of 2021), Audio books, hard books etc. We can perform any NLP base task using it like Classification, text generation, QA, AI assistant, feature extraction etc.
