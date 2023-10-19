@@ -1,4 +1,8 @@
 # Prompt Engineering
+
+### SD-XL Demo Free
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1wCJ7WN9zeQtgexp-40sOXZj4VtCvX0wg?usp=sharing)
+
 ## Text-to-Image Models and Prompt Engineering
 
 ### Models
