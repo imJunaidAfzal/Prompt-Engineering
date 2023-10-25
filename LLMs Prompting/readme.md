@@ -11,6 +11,33 @@ GPT-3 Large language model (175B Params) and trained on internet (till end of 20
 
 Here's the best practices to use the gpt-3 to build the most AI base apps most efficiently. You can access playground here: [OpenAI Playground](https://platform.openai.com/playground). Select completion model from right and select GPT-3.
 
+## Prompting methodology
+
+<img src="images\tree-of-thought.png"/>
+
+### The Chain-of-Thought (CoT) methodology
+The Chain-of-Thought (CoT) methodology significantly bolsters the cognitive performance of AI models by segmenting complex tasks into more manageable steps. By adopting this prompting strategy, AI models can demonstrate heightened cognitive abilities and offer a deeper understanding of their reasoning processes.
+
+This approach is an example of prompt-based learning, and it requires feeding the model with questions and their corresponding solutions before posing related subsequent questions to it. In other words, our CoT prompt teaches the model to reason about the problem and mimic the same reasoning to respond to further queries correctly.
+
+It is observed that by using one of following prompts, the results and reasoning of LLMs increases greatly. Its known as `Chain-of-Thought approach`
+```
+Let's think step by step.
+Let's work this out in a step-by-step way to be sure we have the right answer.
+```
+
+### The Tree-of-Thought approach to Prompt Engineering
+At its core, Chain-of-Thought prompting solicits a step-by-step thinking process from the LLM. Compared to the naive/standard/Input-Output prompting, we get far better results with it.
+
+There are some limitations, however. In a research paper (i.e., arXiv:2305.10601), Yao et al. compared various approaches to prompting, including naive prompting, CoT, as well as a new technique called Tree-of-Thought (ToT), as shown in their image below.
+
+For example, in the Game of 24, GPT-4 with Chain-of-Thought prompting solved only 4% of tasks. In comparison, their ToT approach achieved a success rate of 74%.
+
+The researchers remarked that the CoT didn't perform as well as it “lacks mechanisms to try different clues, make changes to decisions, or backtrack.”
+
+And that's the main limitation of CoT. When considering a complex problem, humans (well, systematic and logical ones, at least) tend to explore a tree of thoughts, evaluating what works and what doesn't, backtracking if needed, jumping back to a previous “node” in the tree if it was more beneficial or promising for the resolution of the problem.
+
+
 ### GPT-3 prompting types
 
 You can build the apps using 3 main prompting types:
