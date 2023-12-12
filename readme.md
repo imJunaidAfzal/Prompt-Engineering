@@ -1,7 +1,12 @@
 # Prompt Engineering
 
 ### SD-XL Demo Free
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1wCJ7WN9zeQtgexp-40sOXZj4VtCvX0wg?usp=sharing)
+
+| Colab Link                                                                                     | Description             |
+|-----------------------------------------------------------------------------------------------|-------------------------|
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1wCJ7WN9zeQtgexp-40sOXZj4VtCvX0wg?usp=sharing) | SD XL base (Slow inference)        |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1BuyvCTWv_i_Qj95ueyX9wx0O5Tr1zd7g?usp=sharing)                | SD-XL (LCM-LoRa) Fast Inference    |
+
 
 ## Text-to-Image Models and Prompt Engineering
 
