@@ -8,6 +8,13 @@
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1BuyvCTWv_i_Qj95ueyX9wx0O5Tr1zd7g?usp=sharing)                | SD-XL (LCM-LoRa) Fast Inference    |
 
 
+### LLMs Demo
+
+| Open in Colab | Description |
+|:-------------:|:--------------------------:|
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ALDA9a4Qg_oqte9VHl16S4o0y1G99U4d?usp=sharing) | Open source LLMs Demo|
+
+
 ## Text-to-Image Models and Prompt Engineering
 
 ### Models
